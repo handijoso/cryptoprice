@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 0.5px;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+#back-video {
+    z-index: -10;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    text-align: end;
+    color: grey;
+    margin-right: 30px;
+    text-decoration: underline grey;
+    margin-top: 50px;
+}
+
+#bitcoinUSD {
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+#main-data {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#form-currency {
+    display: flex;
+    flex-direction: column;
+}
+
+#currencies,
+option {
+    color: black;
+}
+
+#coinName {
+    color: black;
+}
+
+#submit {
+    color: white;
+    border-radius: 20px;
+    background: green;
+    border: 0px;
+    height: 30px;
+}
+
+#submit:hover {
+    background: purple;
+}
+
+.dataResult {
+    margin-top: 30px;
+    background-color: dimgray;
+    width: 200px;
+    text-align: center;
+}
+
+#foot {
+    position: absolute;
+    bottom: 0;
+    color: grey;
+    font-size: 0.8rem;
+    text-decoration: none;
+}
+
+@media (max-width: 700px) {
+    .coinGecko {
+        font-size: 0.7rem;
+    }
+
+    .enter {
+        display: none;
+    }
+
+    #bitcoinUSD {
+        font-size: 0.8rem;
+    }
+
+    #bitcoinUSD .refresh {
+        display: none;
+    }
+
+    #foot {
+        font-size: 0.5rem;
+    }
+}
