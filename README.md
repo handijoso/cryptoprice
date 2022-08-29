@@ -1,2 +1,11 @@
 # cryptoprice
 Retrieving updated crypto price through web API
+
+User need to input the crypto name and select the dropdown currency to go against.
+Crypto name must be written in non-abbreviation format (check the list for detail and supported crypto name)
+
+Click "submit" button after entering the proper crypto name and select the currency wanted.
+
+Result will be shown in symbol format
+
+Note: The BTC/USD price shown by default is updated every minute
