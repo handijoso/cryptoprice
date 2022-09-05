@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Price</title>
+    <link rel="stylesheet" href="app.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <video id="back-video" src="block-chain6-merge.mp4" type="video/mp4" autoplay muted loop></video>
+    <h1>Crypto Prices</h1>
+    <p class="coinGecko">Powered by CoinGecko</p>
+    <div id="bitcoinUSD">
+        <span>BTC/USD:</span>
+        <span class="value"></span> <span class="refresh">(Refresh every minute)</span>
+    </div>
+    <div id="main-data">
+        <label for="coinName"><span class="extra">Enter the </span>Crypto name <a href="crypto-name.html"
+                target="_blank" id="lists">(crypto
+                list)</a>
+            :</label>
+        <input type="text" id="coinName" placeholder="Crypto Name">
+        <form action="" id="form-currency">
+            <label for="currencies">Select Currency:</label>
+            <select name="currencies" id="currencies">
+
+            </select><br>
+            <input id="submit" type="submit" value="Submit">
+        </form>
+        <div class="dataResult">
+            <span id="cryptoUse"></span>
+            <span id="result"></span>
+        </div>
+        <div>
+            <a id="gecko-link" target="_blank"></a>
+        </div>
+    </div>
+    <p id="foot">Copyright &copy; 2022 Website Created by Ignatius Handijoso S.</p>
+    <script src="app.js"></script>
+</body>
+
+</html>
